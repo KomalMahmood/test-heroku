@@ -1,0 +1,569 @@
+*
+{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+}
+.container
+{
+	width: 100%;
+	/*border:1px solid black;*/
+	position: relative;
+}
+.nav
+{
+	width: 100%;
+	height: 20vh;
+	text-transform: uppercase;
+}
+.nav h1
+{
+	text-align: center;
+	margin:2% 0%;
+	font-size: 45px;
+	position: relative;
+	top:-150px;
+	animation-name: heading1;
+	animation-duration: 2s;
+	animation-delay: 0.8s;
+	animation-fill-mode: forwards;
+}
+@keyframes heading1
+{
+	from{top:-150px;}
+	to{top:2%;}
+}
+
+.nav ul
+{
+	width: 60%;
+	position: relative;
+	/*border:1px solid yellow;*/
+	left:25%;
+	top:-100%;
+	animation-name: list;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+}
+@keyframes list
+{
+	from{top:-100%;}
+	to{top:25%;}
+}
+.nav ul li
+{
+	float: left;
+	margin-left: 7%;
+	font-size: 22px;
+}
+.nav li a
+{
+	text-decoration: none;
+	color: purple;
+	font-family: 'Rancho', cursive;
+}
+.nav ul li:hover
+{
+	transform: scale(1.5);/* actual size 1 any element */
+	transition-duration: 2s;
+}
+.clear
+{
+	clear: both;
+}
+.foodimg
+{
+	width: 50%;
+	height: 60vh;
+	margin-top: 10vh;
+	position: relative;
+	left:-50%;
+	background-image: url('images/kk.jpg');
+	background-size: 100% 100%;
+	border:none;
+	animation-delay: 0.4s;
+	animation-duration: 2s;
+	animation-name: food;
+	animation-fill-mode: forwards;
+}
+@keyframes food{
+      from{left:-50%;}
+      to{left:0;}
+}
+.foodimg:hover
+{
+     transform: scale(0.9);
+     transition-duration: 3s;
+}
+.food-order
+{
+	width:50%;
+	height: 60vh;
+	position: absolute;
+	/*border:1px solid green;*/
+	top:34vh;
+	right:0;
+	text-align: center;
+	animation-name: order;
+	animation-delay: 2s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes order: {
+	from{right:-50%};
+	to{right:0;}
+}
+.food-order h1
+{
+	font-family: 'Merienda', cursive;
+	text-transform: uppercase;
+	font-size: 50px;
+	margin:4% 0;
+	position: relative;
+	right:-100%;
+	animation-name: heading;
+	animation-delay: 3s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes heading
+{
+	from{right:-100%;}
+	to{right:0;}
+}
+.food-order p
+{
+	font-family: 'Merienda', cursive;
+	width: 70%;
+	font-size: 18px;
+	color: #323232;
+	margin:4% auto;
+	position: relative;
+	right:-100%;
+    animation-name: paragraph;
+	animation-delay: 4s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes paragraph
+{
+	from{right:-100%;}
+	to{right:0;}
+}
+.food-order button
+{
+	width: 20%;
+	height: 10%;
+	border-radius: 20px;
+	border:none;
+	outline-style: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	background-image: linear-gradient(to left,teal,transparent);
+	font-family: 'Merienda', cursive;
+	position: relative;
+	right:-100%;
+    animation-name: button;
+	animation-delay: 5s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes button
+{
+	from{right:-100%;}
+	to{right:0;}
+}
+.food-order button:hover
+{
+	cursor: pointer;
+	background-image: linear-gradient(to right,teal,transparent);
+	color: whitesmoke;
+	box-shadow: 5px -5px 2px 3px black;
+}
+.food-order:hover
+{
+	transform: scale(0.9);
+	transition-duration: 3s;
+}
+.products
+{
+	position: relative;
+	height: 120vh;
+}
+.products h1
+{
+	text-align: center;
+	margin:6% 0%;
+	font-size: 45px;
+	text-transform: uppercase;
+	
+}
+.c1
+{
+	height: 300px;
+	width: 300px;
+	transition: 2s;
+	float: left;
+	margin-left: 70px;
+	margin-bottom: 5%;
+	border-radius: 20px;
+}
+/* c1's parents first child is h1 so we start from h2 it sees from prospective of its parent*/
+.c1:nth-child(2)
+{
+	background-image: url('images/20.jpeg');
+	background-size: 100% 100%;
+	transform: rotate(-10deg);
+}
+.c1:nth-child(3)
+{
+	background-image: url('images/21.jpeg');
+	background-size: 100% 100%;
+	transform: rotate(10deg);
+}
+.c1:nth-child(4)
+{
+	background-image: url('images/22.jpeg');
+	background-size: 100% 100%;
+	transform: rotate(-10deg);
+}
+.c1:nth-child(5)
+{
+	background-image: url('images/24.jpeg');
+	background-size: 100% 100%;
+	transform: rotate(10deg);
+}
+.c1:nth-child(6)
+{
+	background-image: url('images/23.jpeg');
+	background-size: 100% 100%;
+	transform: rotate(-10deg);
+}
+.c1:nth-child(7)
+{
+	background-image: url('images/26.jpg');
+	background-size: 100% 100%;
+	transform: rotate(10deg);
+}
+.c1:nth-child(8)
+{
+	background-image: url('images/27.jpg');
+	background-size: 100% 100%;
+	transform: rotate(-10deg);
+}
+.c1:nth-child(9)
+{
+	background-image: url('images/28.jpeg');
+	background-size: 100% 100%;
+	transform: rotate(10deg);
+}
+.c1:hover
+{
+	transform: rotate(0deg);
+	transform: scale(1.2);
+	transition-duration: 2s;
+	box-shadow: 2px -2px 3px 3px crimson;
+}
+.c2:hover
+{
+	transform: rotate(0deg);
+	transform: scale(.9);
+	transition-duration: 2s;
+	box-shadow: 2px -2px 3px 5px crimson;
+}
+
+
+#blog
+{
+	position: relative;
+	height: 430vh;
+}
+#blog h1
+{
+	text-align: center;
+	margin:6% 0%;
+	font-size: 45px;
+	text-transform: uppercase;
+	
+}
+.b1
+{
+	height: 420px;
+	width: 250px;
+	transition: 2s;
+	float: left;
+	margin-left: 40px;
+	margin-bottom: 5%;
+	border-radius: 10px;
+	/*border-radius: 20px;*/
+}
+.b1:nth-child(2)
+{
+	background-image: url('images/30.jpg');
+	background-size: 100% 100%;/*horizontally (x-axis) and vertically (y-axis)*/
+	background-repeat: no-repeat;
+	transform: rotateY(0deg);
+	overflow: hidden;
+
+	/*border:2px solid black;*/
+}
+.b1:nth-child(3)
+{
+	background-image: url('images/23.jpeg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transform: rotateY(0deg);
+	overflow: hidden;
+	/*border:2px solid black;*/
+}
+.b1:nth-child(4)
+{
+	background-image: url('images/24.jpeg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transform: rotateY(0deg);
+	overflow: hidden;
+	/*border:2px solid black;*/
+}
+.b1:nth-child(5)
+{
+	background-image: url('images/3.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transform: rotateY(0deg);
+	overflow: hidden;
+	/*border:2px solid black;*/
+}
+.b1:nth-child(6)
+{
+	background-image: url('images/28.jpeg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transform: rotateY(0deg);
+	overflow:hidden;
+	/*border:2px solid black;*/
+}
+.b1:hover
+{
+	transform: scale(0.9);
+	overflow: hidden;
+}
+.b1 h3
+{
+	position: absolute;
+	top:78%;
+	overflow: hidden;
+	padding: 6% 5%;
+	line-height: 3.6vh;
+	background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+	color: white;
+}
+
+.recipe-right img
+{
+	
+	width:450px;
+	height: 365px;
+	margin-left: 10%;
+	margin-top:100px;
+	
+}
+.recipe-right .text1
+{   
+	
+	border:2px solid crimson;
+	width:38%;
+	margin-left:50%;
+	margin-top:-370px;
+	height: 380px;
+	
+} 
+.recipe-right .text1:hover,#recipe2 .text2:hover 
+{
+    box-shadow: 2px -5px 5px 3px black;
+}
+.recipe-right h1,#recipe2 h1
+{
+	font-family: 'Merienda', cursive;
+	text-transform: uppercase;
+	font-size: 50px;
+	margin:2% 0;
+}
+.recipe-right p,#recipe2 p
+{
+	font-family: 'Merienda', cursive;
+	width: 70%;
+	font-size: 18px;
+	color: #323232;
+	margin:4% auto;
+
+}
+.recipe-right button
+{
+	width: 30%;
+	height: 13%;
+	border-radius: 20px;
+	border:none;
+	outline-style: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	background-image: linear-gradient(to left,crimson,transparent);
+	font-family: 'Merienda', cursive;
+	margin-left: 32%;
+}
+.recipe-right .text1 button:hover
+{
+	cursor: pointer;
+	background-image: linear-gradient(to right,crimson,transparent);
+	color: whitesmoke;
+}
+
+#recipe2
+{
+	position: relative;
+	width:100%;
+	height: 70vh;
+
+}
+#recipe2 img
+{
+	
+	width:40;
+	height: 350px;
+	margin-left: 50%;
+	margin-top: 100px;
+}
+#recipe2 .text2
+{   
+	
+	width:480px;
+	margin-left:10%;
+	margin-top:-350px;
+	height: 350px;
+	border:2px solid brown;
+	
+} 
+
+#recipe2 button
+{
+	width: 30%;
+	height: 13%;
+	border-radius: 20px;
+	border:none;
+	outline-style: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	background-image: linear-gradient(to left,brown,transparent);
+	font-family: 'Merienda', cursive;
+	margin-left: 32%;
+}
+.recipe-left .text2 button:hover
+{
+	cursor: pointer;
+	background-image: linear-gradient(to right,brown,transparent);
+	color: whitesmoke;
+}
+#recipe3 img
+{
+	top:460px;
+}
+#recipe3 .text1
+{
+	top:100px;
+}
+#gallery
+{
+	position: relative;
+	width: 100%;
+	height: 60vh;
+	top:120px;
+}
+.gallery
+{
+	width:303px;
+	height: 270px;
+	float: left;
+}
+
+#portfolio
+{
+	position: relative;
+	height: 80vh;
+}
+#portfolio h1
+{
+	text-align: center;
+	margin:6% 0%;
+	font-size: 45px;
+	text-transform: uppercase;
+	
+}
+.p1
+{
+	height: 400px;
+	width: 300px;
+	transition: 2s;
+	float: left;
+	margin-left: 70px;
+	margin-bottom: 5%;
+	/*border-radius: 20px;*/
+}
+.p1:nth-child(2)
+{
+	background-image: url('images/chef1.jpeg');
+	background-size: 100% 60%;/*horizontally (x-axis) and vertically (y-axis)*/
+	background-repeat: no-repeat;
+	transform: rotateY(0deg);
+	border:2px solid black;
+}
+.p1:nth-child(3)
+{
+	background-image: url('images/chef3.jpg');
+	background-size: 100% 60%;
+	background-repeat: no-repeat;
+	transform: rotateY(0deg);
+	border:2px solid black;
+}
+.p1:nth-child(4)
+{
+	background-image: url('images/chef8.jpg');
+	background-size: 100% 60%;
+	background-repeat: no-repeat;
+	transform: rotateY(0deg);
+	border:2px solid black;
+}
+.p1:nth-child(5)
+{
+	background-image: url('images/chef5.jpg');
+	background-size: 100% 60%;
+	background-repeat: no-repeat;
+	transform: rotateY(0deg);
+	border:2px solid black;
+}
+.p1:hover
+{
+	/*transform: rotateY(360deg);*/
+      transform: scale(1.1);
+      box-shadow: 2px 5px 5px 5px pink;
+}
+.p1 h3
+{
+	position: absolute;
+	top:70%;
+	left:36%;
+	
+}
+.p1 p
+{
+	position: absolute;
+	line-height: 4vh;
+	color: grey;
+	top:78%;
+	left:10%;
+	width:80%;
+	text-align: center;
+}
+
